@@ -20,12 +20,12 @@ public class ContactRestController {
 	@Autowired
 	private ContactService service;
 	
-	@PostMapping("/save/contact")//http://localhost:8080/save/contact
+	@PostMapping("/contact")//http://localhost:8080/contact
 	public String saveContact(@RequestBody Contact contact) {
 		return service.saveContact(contact);
 	}
 	
-	@GetMapping("/all/contacts")//http://localhost:8080/all/contacts
+	@GetMapping("/contacts")//http://localhost:8080/contacts
 	public List<Contact> getAllContacts(){
 		return service.getAllContacts();
 	}
@@ -33,11 +33,11 @@ public class ContactRestController {
 	public Optional<Contact> GetContactById(@PathVariable Integer contactId) {
 		return service.getContactById(contactId);
 	}
-	@PutMapping("/update")//http://localhost:8080/update
+	@PutMapping("/contact")//http://localhost:8080/contact
 	public String updateContact(@RequestBody Contact contact) {
 		return service.updateContact(contact);
 	}
-	@DeleteMapping("/delete/{contactId}")//http://localhost:8080/delete/1
+	@DeleteMapping("/contact/{contactId}")//http://localhost:8080/contact/1
 	public String deleteContactById(@PathVariable Integer contactId) {
 		return service.deleteContactById(contactId);
 	}
