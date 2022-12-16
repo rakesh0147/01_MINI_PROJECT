@@ -1,9 +1,11 @@
 package in.phonebook.binding;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import lombok.Data;
 
 @Data
@@ -16,4 +18,5 @@ public class Contact {
 	private String contactName;
     private String contactEmail;
     private Long contactNumber;
+    private String activeStatus;
 }
