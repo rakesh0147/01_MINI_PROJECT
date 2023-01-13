@@ -1,0 +1,7 @@
+in\phonebook\binding\Contact.class
+in\phonebook\repository\ContactRepository.class
+in\phonebook\restcontroller\ContactRestController.class
+in\phonebook\service\impl\ContactServiceImpl.class
+in\phonebook\constant\ContactConstants.class
+in\phonebook\service\ContactService.class
+in\phonebook\Application.class
