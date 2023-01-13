@@ -22,6 +22,10 @@ import in.phonebook.service.ContactService;
 public class ContactRestController {
 	@Autowired
 	private ContactService service;
+     @GetMapping("/welcome")
+     public String welcome(){
+       return "Welcome";
+     }
 	
 	//@ApiOperation("This API Save Contact Information")
 	@PostMapping("/contact")//http://localhost:8080/contact
