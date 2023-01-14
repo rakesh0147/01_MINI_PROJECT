@@ -4,8 +4,10 @@ import java.util.List;
 
 import in.phonebook.binding.Contact;
 
+
+
 public interface ContactService {
-	
+	 
 	public String saveContact(Contact contact);
 	
 	public List<Contact> getAllContacts();
