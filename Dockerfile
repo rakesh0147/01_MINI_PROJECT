@@ -1,4 +1,4 @@
-RUN mvn clean package
+
 FROM openjdk:11
 
 COPY target/contact-backend-app.jar /usr/app/
